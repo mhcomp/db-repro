@@ -1,6 +1,6 @@
 ## Configuration
 
-[The default port is 3000](https://github.com/mhcomp/db-repro/blob/master/src/main.ts#L26)
+[The default port is 3000](https://github.com/mhcomp/db-repro/blob/master/src/main.ts#L22)
 
 [Default database configuration](https://github.com/mhcomp/db-repro/blob/master/src/app.module.ts#L9)
 
