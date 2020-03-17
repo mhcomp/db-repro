@@ -19,5 +19,5 @@ export class Graph extends BaseEntity {
 
   @ManyToOne(() => GraphNode)
   @JoinColumn({ name: "startNodeId" })
-  public startNode: GraphNode;
+  public startNode?: GraphNode;
 }
