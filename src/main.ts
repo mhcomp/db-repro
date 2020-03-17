@@ -9,9 +9,7 @@ import { GraphNode } from "./graphNode.entity";
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const graphsRepository: GraphsRepository = app.get(GraphsRepository);
-  const graphNodesRepository: GraphNodesRepository = app.get(
-    GraphNodesRepository
-  );
+  const graphNodesRepository: GraphNodesRepository = app.get(GraphNodesRepository);
 
   try {
     const graph: Graph = await graphsRepository.createGraph();
