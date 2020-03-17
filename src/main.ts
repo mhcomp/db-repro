@@ -15,9 +15,7 @@ async function bootstrap() {
 
   try {
     const graph: Graph = await graphsRepository.createGraph();
-    const graphNode: GraphNode = await graphNodesRepository.createGraphNode(
-      graph.id
-    );
+    const graphNode: GraphNode = await graphNodesRepository.createGraphNode(graph.id);
     await graphsRepository.updateStartNodeId(graph.id, graphNode.id);
   } catch (error) {
     throw error;
