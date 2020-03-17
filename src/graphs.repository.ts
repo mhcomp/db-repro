@@ -7,14 +7,10 @@ export class GraphsRepository extends Repository<Graph> {
   public createGraph(startNodeId?: string): Promise<Graph> {
     const graph: Graph = new Graph();
     graph.startNodeId = startNodeId;
-
     return graph.save();
   }
 
-  public updateStartNodeId(
-    graphId: string,
-    startNodeId: string
-  ): Promise<UpdateResult> {
+  public updateStartNodeId(graphId: string, startNodeId: string): Promise<UpdateResult> {
     return this.update(graphId, {
       startNodeId
     });
